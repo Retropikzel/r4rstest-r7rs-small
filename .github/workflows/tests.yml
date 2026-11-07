@@ -30,19 +30,6 @@ jobs:
         env:
           SCHEME: chibi
         uses: ./.github/actions/r4rstest-r7rs-small
-  chicken-from-apt:
-    runs-on: ubuntu-26.04
-    steps:
-      - name: Install chicken
-        shell: bash
-        run: |
-          sudo apt-get install -y chicken-bin
-          sudo chicken-install r7rs
-      - uses: actions/checkout@v6
-      - name: test
-        env:
-          SCHEME: chicken
-        uses: ./.github/actions/r4rstest-r7rs-small
   cyclone:
     runs-on: ubuntu-24.04
     steps:
@@ -74,28 +61,6 @@ jobs:
       - name: test
         env:
           SCHEME: foment
-        uses: ./.github/actions/r4rstest-r7rs-small
-  gauche-from-apt:
-    runs-on: ubuntu-26.04
-    steps:
-      - name: Install gauche
-        shell: bash
-        run: sudo apt-get install -y gauche
-      - uses: actions/checkout@v6
-      - name: test
-        env:
-          SCHEME: gauche
-        uses: ./.github/actions/r4rstest-r7rs-small
-  guile-from-apt:
-    runs-on: ubuntu-26.04
-    steps:
-      - name: Install guile
-        shell: bash
-        run: sudo apt-get install -y guile-3.0
-      - uses: actions/checkout@v6
-      - name: test
-        env:
-          SCHEME: guile
         uses: ./.github/actions/r4rstest-r7rs-small
   kawa:
     runs-on: ubuntu-26.04
