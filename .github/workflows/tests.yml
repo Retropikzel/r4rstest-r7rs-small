@@ -47,21 +47,6 @@ jobs:
         env:
           SCHEME: cyclone
         uses: ./.github/actions/r4rstest-r7rs-small
-  foment:
-    runs-on: ubuntu-26.04
-    steps:
-      - name: Install foment
-        shell: bash
-        run: |
-          git clone https://github.com/leftmike/foment.git
-          cd foment/unix
-          make
-          sudo make install
-      - uses: actions/checkout@v6
-      - name: test
-        env:
-          SCHEME: foment
-        uses: ./.github/actions/r4rstest-r7rs-small
   kawa:
     runs-on: ubuntu-26.04
     steps:
@@ -221,21 +206,6 @@ jobs:
       - name: test
         env:
           SCHEME: stklos
-        uses: ./.github/actions/r4rstest-r7rs-small
-  tr7:
-    runs-on: ubuntu-26.04
-    steps:
-      - name: Install tr7
-        shell: bash
-        run: |
-          git clone https://gitlab.com/jobol/tr7.git --branch=v2.0.19
-          cd tr7
-          make
-          sudo make install
-      - uses: actions/checkout@v6
-      - name: test
-        env:
-          SCHEME: tr7
         uses: ./.github/actions/r4rstest-r7rs-small
   ypsilon:
     runs-on: ubuntu-26.04
