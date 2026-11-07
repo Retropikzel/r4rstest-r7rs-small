@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: chibi
         uses: ./.github/actions/r4rstest-r7rs-small
   chicken-from-apt:
     runs-on: ubuntu-26.04
@@ -41,7 +41,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: chicken
         uses: ./.github/actions/r4rstest-r7rs-small
   cyclone:
     runs-on: ubuntu-24.04
@@ -58,7 +58,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: cyclone
         uses: ./.github/actions/r4rstest-r7rs-small
   foment:
     runs-on: ubuntu-26.04
@@ -73,7 +73,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: foment
         uses: ./.github/actions/r4rstest-r7rs-small
   gauche-from-apt:
     runs-on: ubuntu-26.04
@@ -84,7 +84,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: gauche
         uses: ./.github/actions/r4rstest-r7rs-small
   guile-from-apt:
     runs-on: ubuntu-26.04
@@ -95,7 +95,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: guile
         uses: ./.github/actions/r4rstest-r7rs-small
   kawa:
     runs-on: ubuntu-26.04
@@ -112,7 +112,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: kawa
         uses: ./.github/actions/r4rstest-r7rs-small
   loko:
     runs-on: ubuntu-26.04
@@ -128,7 +128,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: loko
         uses: ./.github/actions/r4rstest-r7rs-small
   meevax:
     runs-on: ubuntu-26.04
@@ -145,7 +145,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: meevax
         uses: ./.github/actions/r4rstest-r7rs-small
   mit-scheme-from-apt:
     runs-on: ubuntu-26.04
@@ -156,7 +156,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: mit-scheme
         uses: ./.github/actions/r4rstest-r7rs-small
   mosh:
     runs-on: ubuntu-26.04
@@ -174,7 +174,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: mosh
         uses: ./.github/actions/r4rstest-r7rs-small
   racket-from-apt:
     runs-on: ubuntu-26.04
@@ -187,7 +187,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: racket
         uses: ./.github/actions/r4rstest-r7rs-small
   sagittarius:
     runs-on: ubuntu-24.04
@@ -206,7 +206,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: sagittarius
         uses: ./.github/actions/r4rstest-r7rs-small
   skint:
     runs-on: ubuntu-24.04
@@ -221,7 +221,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: skint
         uses: ./.github/actions/r4rstest-r7rs-small
   stak:
     runs-on: ubuntu-24.04
@@ -239,7 +239,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: stak
         uses: ./.github/actions/r4rstest-r7rs-small
   stklos:
     runs-on: ubuntu-26.04
@@ -255,7 +255,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: stklos
         uses: ./.github/actions/r4rstest-r7rs-small
   tr7:
     runs-on: ubuntu-26.04
@@ -270,7 +270,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: tr7
         uses: ./.github/actions/r4rstest-r7rs-small
   ypsilon:
     runs-on: ubuntu-26.04
@@ -290,5 +290,5 @@ jobs:
       - uses: actions/checkout@v6
       - name: test
         env:
-          SCHEME: capyscheme
+          SCHEME: ypsilon
         uses: ./.github/actions/r4rstest-r7rs-small
