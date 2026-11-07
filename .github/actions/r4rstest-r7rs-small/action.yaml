@@ -26,5 +26,5 @@ runs:
     - name: Compile and run test
       shell: bash
       run: |
-        COMPILE_R7RS=${SCHEME} compile-r7rs -o r4rstest-r7rs-small r4rstest-r7rs-small.scm
-        ./r4rstest-r7rs-small
+        COMPILE_R7RS=${SCHEME} compile-r7rs -o r7rstest r7rstest.scm
+        ./r7rstest
